@@ -7,60 +7,57 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+## Praktikum 1
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+![Screenshot (468)](https://github.com/user-attachments/assets/5c56424d-cff0-41a8-8fe5-3bdef96691a6)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+![Screenshot (469)](https://github.com/user-attachments/assets/13aaac66-a7df-4c55-b9cb-fe78766f4280)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+![Screenshot (470)](https://github.com/user-attachments/assets/9fd480dc-6c1f-4053-b49d-03009b42f2c7)
+    
+![Screenshot 2025-03-08 160717](https://github.com/user-attachments/assets/eb4ee1db-4d61-4caf-8690-9ef6e7fa6eff)
 
-## Learning Laravel
+![Screenshot (472)](https://github.com/user-attachments/assets/5aff39fb-d5d6-4d5c-98cc-0c1bd9e3beb1)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Praktikum 2
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+![Screenshot 2025-03-15 191541](https://github.com/user-attachments/assets/e22ba5b6-04f0-4374-bc46-07fb4258c6d0)
 
-## Laravel Sponsors
+![Screenshot (483)](https://github.com/user-attachments/assets/74209e29-eea0-42b7-9123-2c4126e8885f)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+![Screenshot (484)](https://github.com/user-attachments/assets/dd2c60c5-91ec-454e-a651-f3c9fbb61f08)
 
-### Premium Partners
+Dekstop View
+![Screenshot (485)](https://github.com/user-attachments/assets/86e1752e-6386-441d-944c-44547b99df81)
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+![Screenshot (486)](https://github.com/user-attachments/assets/5c3a9317-9c33-4011-af0b-642a230fc2c4)
 
-## Contributing
+![Screenshot (487)](https://github.com/user-attachments/assets/6d32e3bb-2f0a-46e6-b9d3-cf87c741ac01)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Mobile View
+![Screenshot 2025-03-18 125957](https://github.com/user-attachments/assets/8c2250c5-4ca4-43dc-a625-6b0a13ad8102)
 
-## Code of Conduct
+![Screenshot 2025-03-18 130016](https://github.com/user-attachments/assets/1462ae89-809a-4aec-b11f-12679326f303)
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Praktikum 3
+Commands
+![Screenshot 2025-03-27 063200](https://github.com/user-attachments/assets/a1cf7cb9-448d-4ada-82a2-c1b8463c0b37)
 
-## Security Vulnerabilities
+![Screenshot 2025-03-27 063147](https://github.com/user-attachments/assets/79cb4a61-ce45-4495-8607-8eab4ddc9035)
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Database
+![Screenshot (505)](https://github.com/user-attachments/assets/c263b6e4-6681-42b3-9e3f-e09190b119cf)
 
-## License
+![Screenshot (504)](https://github.com/user-attachments/assets/579af40a-e5a7-4826-be39-22647e3e4eb7)
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Collections
+![Screenshot (503)](https://github.com/user-attachments/assets/ef508c13-f96c-4172-b221-a78446fef91a)
+
+
+
+
+
+
+
+
