@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+<<<<<<< HEAD
 use App\Models\Todo;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -9,6 +10,11 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 
+=======
+use App\Models\User;
+// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+>>>>>>> c08d03ce07ef10461e3ccda1bb7ebc3176fb85e7
 
 class DatabaseSeeder extends Seeder
 {
@@ -20,6 +26,7 @@ class DatabaseSeeder extends Seeder
         // User::factory(10)->create();
 
         User::factory()->create([
+<<<<<<< HEAD
             'name' => 'Admin',
             'email' => 'admin@admin.com',
             'email_verified_at' => now(),
@@ -30,5 +37,10 @@ class DatabaseSeeder extends Seeder
 
         User::factory(100)->create();
         Todo::factory(500)->create();
+=======
+            'name' => 'Test User',
+            'email' => 'test@example.com',
+        ]);
+>>>>>>> c08d03ce07ef10461e3ccda1bb7ebc3176fb85e7
     }
 }
