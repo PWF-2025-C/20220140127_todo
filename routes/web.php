@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TodoController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\CategoryController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -19,20 +20,22 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+Route::middleware('auth')->group(function () {
+    Route::get('/todos', [TodoController::class, 'index'])->name('todo.index');
+    Route::post('/todo', [TodoController::class, 'store'])->name('todo.store');
+    Route::get('/todo/{todo}/edit', [TodoController::class, 'edit'])->name('todo.edit');
+    Route::get('/todo/create', [TodoController::class, 'create'])->name('todo.create');
 
-Route::get('/todos', [TodoController::class, 'index'])->name('todo.index');
-Route::post('/todo', [TodoController::class, 'store'])->name('todo.store');
-Route::get('/todo/{todo}/edit', [TodoController::class, 'edit'])->name('todo.edit');
-Route::get('/todo/create', [TodoController::class, 'create'])->name('todo.create');
+    Route::delete('/todo/{todo}', [TodoController::class, 'destroy'])->name('todo.destroy');
+    Route::delete('/todo', [TodoController::class, 'destroyCompleted'])->name('todo.deleteallcompleted');
 
-Route::delete('/todo/{todo}', [TodoController::class, 'destroy'])->name('todo.destroy');
-Route::delete('/todo', [TodoController::class, 'destroyCompleted'])->name('todo.deleteallcompleted');
+    Route::patch('/todo/{todo}', [TodoController::class, 'update'])->name('todo.update');
+    Route::patch('/todo/{todo}/complete', [TodoController::class, 'complete'])->name('todo.complete');
+    Route::patch('/todo/{todo}/uncomplete', [TodoController::class, 'uncomplete'])->name('todo.uncomplete');
+    Route::resource('category', CategoryController::class)->except(['show']);
+});
 
-Route::patch('/todo/{todo}', [TodoController::class, 'update'])->name('todo.update');
-Route::patch('/todo/{todo}/complete', [TodoController::class, 'complete'])->name('todo.complete');
-Route::patch('/todo/{todo}/uncomplete', [TodoController::class, 'uncomplete'])->name('todo.uncomplete');
-
-Route::middleware(['auth', 'admin'])->group(function(){
+Route::middleware(['auth', 'admin'])->group(function () {
     Route::get('/user', [UserController::class, 'index'])->name('user.index');
     Route::patch('/user/{user}/makeadmin', action: [UserController::class, 'makeadmin'])->name('user.makeadmin');
     Route::patch('/user/{user}/removeadmin', [UserController::class, 'removeadmin'])->name('user.removeadmin');
@@ -41,4 +44,4 @@ Route::middleware(['auth', 'admin'])->group(function(){
 });
 // Route::resource('todo', TodoController::class)->except(['show']);
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
