@@ -14,21 +14,18 @@ class UserController extends Controller
         //           ->paginate(10);
                   
         // return view('user.index', compact('users'));
-        $search = request('search');
+         $search = request('search');
         if ($search) {
-            $users = User::where(function($query) use ($search) {
-                        $query->where('name', 'like', '%'.$search.'%')
-                            ->orWhere('email', 'like', '%'.$search.'%');
-                    })
-                    ->where('id', '!=', 1)
-                    ->orderBy('name')
-                    ->paginate(20)
-                    ->withQueryString();
+            $users = User::with('todos')->where(function ($query) use ($search) {
+                $query->where('name', 'like', '%' . $search . '%')
+                    ->orWhere('email', 'like', '%' . $search . '%');
+            });
         } else {
-            $users = User::where('id', '!=', 1)
-                    ->orderBy('name')
-                    ->paginate(20);
+            $users = User::with('todos')->where('id', '!=', 1)
+                        ->orderBy('name')
+                        ->paginate(10);
         }
+
         return view('user.index', compact('users'));
     }
     public function makeadmin(User $user)
